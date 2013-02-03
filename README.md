@@ -1,0 +1,4 @@
+simplecontent
+=============
+
+CakePHP SimpleContent plugin
