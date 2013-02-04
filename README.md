@@ -3,7 +3,7 @@ SimpleContent
 
 Intro
 ----------------------
-This plugin makes it possible to simply add, edit and delete content pages. For example. If you have a created a webshop CakePHP app and need some semi-static pages (the admin can edit) like a terms or contact page, this plugin makes that kind of simple easy editable pages possible.
+This CakePHP plugin makes it possible to simply add, edit and delete content pages. For example, if you created a webshop CakePHP app and need some semi-static pages (the admin can edit) like a terms or contact page, this plugin makes that kind of simple easy editable pages possible without the need of a full CMS.
 
 
 Installation and Setup
