@@ -11,9 +11,9 @@ Installation and Setup
 
 (1) Check out a copy of the SimpleContent CakePHP plugin from the repository using Git :
 
-git clone http://github.com/stefanvangastel/SimpleContent.git
+git clone http://github.com/stefanvangastel/simplecontent.git
 
-or download the archive from Github : http://github.com/stefanvangastel/SimpleContent/archives/master
+or download the archive from Github : https://github.com/stefanvangastel/simplecontent/archive/master.zip
 
 You must place the SimpleContent CakePHP plugin within your CakePHP 2.x app/Plugin directory.
 
@@ -26,7 +26,7 @@ CakePlugin::load('SimpleContent', array('routes' => true));
 
 user@host$ cake schema create --plugin SimpleContent 
 
-File location: /SimpleContent/db/simplecontent_table_structure.sql
+or load the SQL struct file in your db from location: app/Plugin/SimpleContent/db/simplecontent_table_structure.sql
 
 (4) Optional configuration
 
