@@ -1,13 +1,17 @@
-SimpleContent
-========================
+# SimpleContent
+- - -
 
-Intro
-----------------------
+# Intro
+
 This CakePHP plugin makes it possible to simply add, edit and delete content pages. For example, if you created a webshop CakePHP app and need some semi-static pages (the admin can edit) like a terms or contact page, this plugin makes that kind of simple easy editable pages possible without the need of a full CMS.
 
+# Requirements
 
-Installation and Setup
-----------------------
+This plugin requires jQuery to be loaded. It uses CKEditor 4 and the editablediv technique for editing pages.
+
+
+# Installation and Setup
+
 
 (1) Check out a copy of the SimpleContent CakePHP plugin from the repository using Git :
 
@@ -47,21 +51,21 @@ You can do this in /SimpleContent/Controller/SimpleContentAppController.php
 
 (5) Visit http://YOUR_URL/sc/
 
-Tips
-------------------------
+# Tips
+
 If you want to include the content of a certain page, you can use this in the view of that page:
 
-<?php
-$page = $this->requestAction('/sp/10/Slugged_page_title'); //10 is the id of the page, that is all that matters. The slugged title is nice for Google
-
-if( ! empty($page['SimplePage']['content']) ){
+	<?php
+	$page = $this->requestAction('/sp/10/Slugged_page_title'); //10 is the id of the page, that is all that matters. The slugged title is nice for Google
 	
-	//Title
-	echo '<h1>'.$page['SimplePage']['title'].'</h1>';
-	
-	//Content
-	echo $page['SimplePage']['content']; 
-}
-?>
+	if( ! empty($page['SimplePage']['content']) ){
+		
+		//Title
+		echo '<h1>'.$page['SimplePage']['title'].'</h1>';
+		
+		//Content
+		echo $page['SimplePage']['content']; 
+	}
+	?>
 
 This way you can use the content of pages created by SimpleContent whereever you want.
