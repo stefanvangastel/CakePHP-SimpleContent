@@ -7,9 +7,14 @@ class SimpleContentAppController extends AppController {
 		$this->layout = 'default';
 		
 		//Auth as you will, eg:
-		#if($this->request['controller'] == 'simple_pages' AND $this->request['action'] != 'display')){
-			#Do auth things
-		#}
+		/*
+		if($this->request['controller'] == 'simple_pages' AND $this->request['action'] != 'display'){
+			if( AuthComponent::user('role') != 'admin' ){
+				$this->Session->setFlash(__('Access denied'),'error');
+				$this->redirect('/');
+			}
+		}
+		*/
 	}
 	
 }
