@@ -87,6 +87,11 @@ class SimplePagesController extends SimpleContentAppController {
 			$this->redirect($this->referer());
 		}
 		
+		//If the page was requested using requestAction, return the page object. Can be handy for integration of content in custom pages.
+		if (! empty($this->request->params['requested']) ) {
+			return $page;
+		}
+		
 		$this->set('page',$page);
 	}
 	

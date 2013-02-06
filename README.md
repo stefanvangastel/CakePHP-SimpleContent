@@ -47,4 +47,21 @@ You can do this in /SimpleContent/Controller/SimpleContentAppController.php
 
 (5) Visit http://YOUR_URL/sc/
 
+Tips
+------------------------
+If you want to include the content of a certain page, you can use this in the view of that page:
 
+<?php
+$page = $this->requestAction('/sp/10/Slugged_page_title'); //10 is the id of the page, that is all that matters. The slugged title is nice for Google
+
+if( ! empty($page['SimplePage']['content']) ){
+	
+	//Title
+	echo '<h1>'.$page['SimplePage']['title'].'</h1>';
+	
+	//Content
+	echo $page['SimplePage']['content']; 
+}
+?>
+
+This way you can use the content of pages created by SimpleContent whereever you want.
