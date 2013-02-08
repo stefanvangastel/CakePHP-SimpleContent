@@ -15,9 +15,9 @@ This plugin requires jQuery to be loaded. It uses CKEditor 4 and the editablediv
 
 (1) Check out a copy of the SimpleContent CakePHP plugin from the repository using Git :
 
-git clone http://github.com/stefanvangastel/simplecontent.git
+git clone http://github.com/stefanvangastel/CakePHP-SimpleContent.git
 
-or download the archive from Github : https://github.com/stefanvangastel/simplecontent/archive/master.zip
+or download the archive from Github : https://github.com/stefanvangastel/CakePHP-SimpleContent/archive/master.zip
 
 You must place the SimpleContent CakePHP plugin within your CakePHP 2.x app/Plugin directory.
 
